@@ -66,7 +66,11 @@ def formatting_prompts_func(examples):
         texts.append(text)
     return { "text" : texts, }
 
-mapped_dataset = dataset.map(formatting_prompts_func, batched = True,)
+mapped_dataset = dataset.map(
+    formatting_prompts_func,
+    batched = True,
+    remove_columns = ["instruction", "input", "output"] #
+)
 
 # Train
 print("훈련 시작")
