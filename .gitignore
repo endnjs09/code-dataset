@@ -1,0 +1,9 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+
+raw_data/
+
+outputs/
+lora_model_visualalgo/

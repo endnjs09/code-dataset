@@ -1,0 +1,14 @@
+# 파이낸튜닝 환경을 위한 추천 라이브러리 목록
+
+# 기본 머신러닝 라이브러리
+torch
+transformers
+datasets
+trl
+
+# QwQ, Qwen, Llama 특화 고속 파인튜닝 라이브러리 (Unsloth)
+# https://github.com/unslothai/unsloth
+unsloth[colab-new]
+
+# 데이터셋 포맷용
+jsonlines
