@@ -80,6 +80,7 @@ trainer = SFTTrainer(
     train_dataset = mapped_dataset,
     args = SFTConfig(
         dataset_text_field = "text",
+        remove_unused_columns = True,
         max_seq_length = max_seq_length,
         dataset_num_proc = 2,
         packing = False,
