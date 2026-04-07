@@ -69,7 +69,7 @@ def formatting_prompts_func(examples):
 mapped_dataset = dataset.map(
     formatting_prompts_func,
     batched = True,
-    remove_columns = ["instruction", "input", "output"] #
+    remove_columns = dataset.column_names
 )
 
 # Train
