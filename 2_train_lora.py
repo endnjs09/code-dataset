@@ -14,7 +14,7 @@ load_in_4bit = True
 
 print("베이스 AI 모델(Qwen2.5-Coder-7B) 로딩 중...")
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name = "unsloth/Qwen2.5-Coder-7B",
+    model_name = "unsloth/Qwen2.5-Coder-3B-Instruct",
     max_seq_length = max_seq_length,
     dtype = dtype,
     load_in_4bit = load_in_4bit,
